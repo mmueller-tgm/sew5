@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="63.870cm" height="34.388cm" viewBox="-0.023 23.494 63.847 57.882"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="22.671" y="27.745" width="8.970" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="22.671" y="27.745" width="8.970" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="27.156" y="28.695"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+Socket</text>
+<rect x="22.671" y="29.145" width="8.970" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="22.671" y="29.145" width="8.970" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="22.671" y="29.545" width="8.970" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="22.671" y="29.545" width="8.970" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="22.821" y="30.245"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++print_line(msg:str)</text>
+<text x="22.821" y="31.045"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++read_line(msg:str=&apos;&apos;)</text>
+<rect x="33.989" y="39.061" width="10.895" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="33.989" y="39.061" width="10.895" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="39.436" y="40.011"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+SocketDecorator</text>
+<rect x="33.989" y="40.461" width="10.895" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="33.989" y="40.461" width="10.895" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="34.139" y="41.161"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++component: SocketDecorator</text>
+<rect x="33.989" y="41.461" width="10.895" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="33.989" y="41.461" width="10.895" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="34.139" y="42.161"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++print_line(msg:str)</text>
+<text x="34.139" y="42.961"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++read_line(msg:str=&apos;&apos;)</text>
+<rect x="18.528" y="43.915" width="12.508" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="18.528" y="43.915" width="12.508" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="24.782" y="44.865"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+ConcreteBASE64Decorator</text>
+<rect x="18.528" y="45.315" width="12.508" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="18.528" y="45.315" width="12.508" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="18.678" y="46.015"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++component: SocketDecorator</text>
+<rect x="18.528" y="46.315" width="12.508" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="18.528" y="46.315" width="12.508" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="18.678" y="47.015"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ print_line(msg:str)</text>
+<text x="18.678" y="47.815"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ read_line(msg:str=&apos;&apos;)</text>
+<rect x="51.289" y="44.293" width="12.508" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="51.289" y="44.293" width="12.508" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="57.543" y="45.243"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+ConcreteBASE16Decorator</text>
+<rect x="51.289" y="45.693" width="12.508" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="51.289" y="45.693" width="12.508" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="51.439" y="46.393"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++component: SocketDecorator</text>
+<rect x="51.289" y="46.693" width="12.508" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="51.289" y="46.693" width="12.508" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="51.439" y="47.393"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ print_line(msg:str)</text>
+<text x="51.439" y="48.193"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ read_line(msg:str=&apos;&apos;)</text>
+<rect x="20.281" y="53.632" width="12.508" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="20.281" y="53.632" width="12.508" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="26.534" y="54.582"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+ConcreteBASE32Decorator</text>
+<rect x="20.281" y="55.032" width="12.508" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="20.281" y="55.032" width="12.508" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="20.431" y="55.732"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++component: SocketDecorator</text>
+<rect x="20.281" y="56.032" width="12.508" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="20.281" y="56.032" width="12.508" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="20.431" y="56.732"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ print_line(msg:str)</text>
+<text x="20.431" y="57.532"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ read_line(msg:str=&apos;&apos;)</text>
+<rect x="45.233" y="48.738" width="10.895" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="45.233" y="48.738" width="10.895" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="50.681" y="49.688"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+ConcreteAESDecorator</text>
+<rect x="45.233" y="50.138" width="10.895" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="45.233" y="50.138" width="10.895" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="45.383" y="50.838"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++component: SocketDecorator</text>
+<rect x="45.233" y="51.138" width="10.895" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="45.233" y="51.138" width="10.895" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="45.383" y="51.838"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ print_line(msg:str)</text>
+<text x="45.383" y="52.638"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ read_line(msg:str=&apos;&apos;)</text>
+<rect x="33.367" y="53.435" width="12.197" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="33.367" y="53.435" width="12.197" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="39.466" y="54.385"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+ConcreteOutputDecorator</text>
+<rect x="33.367" y="54.835" width="12.197" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="33.367" y="54.835" width="12.197" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="33.517" y="55.535"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++component: SocketDecorator</text>
+<rect x="33.367" y="55.835" width="12.197" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="33.367" y="55.835" width="12.197" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="33.517" y="56.535"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ print_line(msg:str)</text>
+<text x="33.517" y="57.335"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ read_line(msg:str=&apos;&apos;)</text>
+<line x1="37.163" y1="39.011" x2="29.556" y2="31.815" stroke="#000000" stroke-width="0.100" stroke-dasharray="1.00,1.00"/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="29.727,31.634 29.192,31.472 29.384,31.997 "/>
+<line x1="31.082" y1="43.928" x2="33.358" y2="43.175" stroke="#000000" stroke-width="0.100" />
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="33.437,43.412 33.833,43.017 33.279,42.937 "/>
+<line x1="28.438" y1="53.582" x2="37.127" y2="43.769" stroke="#000000" stroke-width="0.100" />
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="37.315,43.934 37.459,43.394 36.940,43.603 "/>
+<line x1="39.462" y1="53.385" x2="39.442" y2="43.923" stroke="#000000" stroke-width="0.100" />
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="39.692,43.922 39.441,43.423 39.192,43.923 "/>
+<line x1="48.182" y1="48.687" x2="42.399" y2="43.711" stroke="#000000" stroke-width="0.100" />
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="42.562,43.521 42.020,43.385 42.236,43.900 "/>
+<line x1="51.239" y1="44.572" x2="45.522" y2="42.920" stroke="#000000" stroke-width="0.100" />
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="45.591,42.679 45.041,42.781 45.452,43.160 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="39.436,39.011 39.436,35.207 39.438,35.207 39.438,29.545 32.302,29.545 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="32.302,29.295 31.802,29.545 32.302,29.795 "/>
+<rect x="0.237" y="38.764" width="8.970" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.237" y="38.764" width="8.970" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="4.722" y="39.714"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+TestSocket</text>
+<rect x="0.237" y="40.164" width="8.970" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.237" y="40.164" width="8.970" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="0.237" y="40.564" width="8.970" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.237" y="40.564" width="8.970" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="0.387" y="41.264"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++print_line(msg:str)</text>
+<text x="0.387" y="42.064"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++read_line(msg:str=&apos;&apos;)</text>
+<rect x="0.027" y="23.544" width="9.355" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.027" y="23.544" width="9.355" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="4.704" y="24.494"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+ServerSocket</text>
+<rect x="0.027" y="24.944" width="9.355" height="2.600" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.027" y="24.944" width="9.355" height="2.600" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="0.177" y="25.644"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++ip: string = localhost</text>
+<text x="0.177" y="26.444"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++port: int = 5005</text>
+<text x="0.177" y="27.244"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++buffer: int = 1024</text>
+<rect x="0.027" y="27.544" width="9.355" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.027" y="27.544" width="9.355" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="0.177" y="28.244"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++print_line(msg:str)</text>
+<text x="0.177" y="29.044"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++read_line(msg:str=&apos;&apos;)</text>
+<rect x="0.119" y="31.024" width="9.355" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.119" y="31.024" width="9.355" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="4.797" y="31.974"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+ClientSocket</text>
+<rect x="0.119" y="32.424" width="9.355" height="2.600" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.119" y="32.424" width="9.355" height="2.600" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="0.269" y="33.124"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++ip: string = localhost</text>
+<text x="0.269" y="33.924"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++port: int = 5005</text>
+<text x="0.269" y="34.724"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++buffer: int = 1024</text>
+<rect x="0.119" y="35.024" width="9.355" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.119" y="35.024" width="9.355" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="0.269" y="35.724"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++print_line(msg:str)</text>
+<text x="0.269" y="36.524"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++read_line(msg:str=&apos;&apos;)</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100" stroke-dasharray="1.00,1.00" points="9.432,26.444 16.026,26.444 16.026,29.545 22.009,29.545 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="22.009,29.795 22.509,29.545 22.009,29.295 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100" stroke-dasharray="1.00,1.00" points="9.524,33.924 16.072,33.924 16.072,29.545 22.009,29.545 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="22.009,29.795 22.509,29.545 22.009,29.295 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100" stroke-dasharray="1.00,1.00" points="4.722,38.717 4.722,37.667 27.156,37.667 27.156,32.006 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="27.406,32.006 27.156,31.506 26.906,32.006 "/>
+</svg>

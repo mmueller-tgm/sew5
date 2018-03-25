@@ -1,0 +1,6 @@
+INDEX VERSION 1.129+/home/max/Documents/Schule/_5BHIT/A_SEW/.metadata/.plugins/org.eclipse.jdt.core
+3078054162.index
+881005218.index
+886357405.index
+2792187481.index
+2708295416.index

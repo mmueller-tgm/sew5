@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+    a04:
+        build:
+            context: .
+        ports:
+            - '8080:8080'
+        container_name: A_04_Jenkins

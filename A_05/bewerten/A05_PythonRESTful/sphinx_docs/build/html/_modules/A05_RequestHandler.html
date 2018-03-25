@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>A05_RequestHandler &#8212; Python Rest Applikation A05 1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Python Rest Applikation A05 1 documentation" href="../index.html" />
+    <link rel="up" title="Module code" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for A05_RequestHandler</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">@author: </span>
+<span class="sd">@date: 18-10-2017</span>
+<span class="sd">@use: Contains the class that handles requests</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ET</span>
+
+
+<div class="viewcode-block" id="A05RequestHandler"><a class="viewcode-back" href="../A05_RequestHandler.html#A05_RequestHandler.A05RequestHandler">[docs]</a><span class="k">class</span> <span class="nc">A05RequestHandler</span><span class="p">:</span>
+
+<div class="viewcode-block" id="A05RequestHandler.__init__"><a class="viewcode-back" href="../A05_RequestHandler.html#A05_RequestHandler.A05RequestHandler.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        The constructor sets some major things for the request.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://maps.googleapis.com/maps/api/directions/&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">apiKey</span> <span class="o">=</span> <span class="s2">&quot;AIzaSyAe_FFYgIouyVQ-TCLT-gfJ2VXc-TqBYlk&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;de&quot;</span></div>
+
+<div class="viewcode-block" id="A05RequestHandler.handle_request"><a class="viewcode-back" href="../A05_RequestHandler.html#A05_RequestHandler.A05RequestHandler.handle_request">[docs]</a>    <span class="k">def</span> <span class="nf">handle_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">origin</span><span class="p">,</span> <span class="n">destination</span><span class="p">,</span> <span class="n">json_or_xml</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This method sets the params for the request. Then it the method checks if the request should be handled by</span>
+<span class="sd">        JSON or XML and then it calls the converting method for the responses.</span>
+
+<span class="sd">        :param origin: Origin of path finding</span>
+<span class="sd">        :param destination: Destination of the path finding</span>
+<span class="sd">        :param json_or_xml: Boolean parameter that decides if the request should be done by JSON or XML</span>
+<span class="sd">        :return: The converted values</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;origin&quot;</span><span class="p">:</span> <span class="n">origin</span><span class="p">,</span>
+                  <span class="s2">&quot;destination&quot;</span><span class="p">:</span> <span class="n">destination</span><span class="p">,</span>
+                  <span class="s2">&quot;sensor&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;key&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">apiKey</span><span class="p">,</span>
+                  <span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">language</span><span class="p">}</span>
+
+        <span class="k">if</span> <span class="n">json_or_xml</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">+</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
+            <span class="n">converted_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">convert_json</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">+</span> <span class="s2">&quot;xml&quot;</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
+            <span class="n">converted_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">convert_xml</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">converted_value</span></div>
+
+    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="A05RequestHandler.convert_json"><a class="viewcode-back" href="../A05_RequestHandler.html#A05_RequestHandler.A05RequestHandler.convert_json">[docs]</a>    <span class="k">def</span> <span class="nf">convert_json</span><span class="p">(</span><span class="n">raw_json_data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Converts the JSON response to a string that can be displayed on the output screen. If something went wrong</span>
+<span class="sd">        it will give back a static output and the status of the request.</span>
+
+<span class="sd">        :param raw_json_data: The JSON response that needs to be converted</span>
+<span class="sd">        :return: An array that contains the converted JSON data and the status of the request</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">json_data</span> <span class="o">=</span> <span class="n">raw_json_data</span><span class="p">[</span><span class="s2">&quot;routes&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;legs&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">duration</span> <span class="o">=</span> <span class="n">json_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;duration&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">json_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;distance&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+
+            <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Die Gesamtdauer beträgt &lt;b&gt;&quot;</span> <span class="o">+</span> <span class="n">duration</span> <span class="o">+</span> <span class="s2">&quot;&lt;/b&gt;, &quot;</span> \
+                                                                <span class="s2">&quot;die Gesamtentfernung: &lt;b&gt;&quot;</span> <span class="o">+</span> <span class="n">distance</span> <span class="o">+</span> <span class="s2">&quot;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&quot;</span>
+
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">json_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;steps&quot;</span><span class="p">):</span>
+                <span class="n">output</span> <span class="o">+=</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;html_instructions&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;, Entfernung: &quot;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;distance&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">)</span> \
+                         <span class="o">+</span> <span class="s2">&quot;, Dauer: &quot;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;duration&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;&quot;</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Something went wrong :(&quot;</span>
+
+        <span class="k">return</span> <span class="p">[</span><span class="n">output</span><span class="p">,</span> <span class="n">raw_json_data</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]]</span></div>
+
+    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="A05RequestHandler.convert_xml"><a class="viewcode-back" href="../A05_RequestHandler.html#A05_RequestHandler.A05RequestHandler.convert_xml">[docs]</a>    <span class="k">def</span> <span class="nf">convert_xml</span><span class="p">(</span><span class="n">raw_xml_data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Converts the XML response to a string that can be displayed on the output screen. If something went wrong</span>
+<span class="sd">        it will give back a static output and the status of the request.</span>
+
+<span class="sd">        :param raw_xml_data: The XML response that needs to be converted</span>
+<span class="sd">        :return: An array that contains the converted XML data and the status of the request</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">xml_data</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">raw_xml_data</span><span class="p">)</span>
+        <span class="n">leg_xml_data</span> <span class="o">=</span> <span class="n">xml_data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Die Gesamtdauer beträgt &lt;b&gt;&quot;</span> <span class="o">+</span> <span class="n">leg_xml_data</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;distance&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span> <span class="o">+</span> \
+                     <span class="s2">&quot;&lt;/b&gt;, die Gesamtentfernung: &lt;b&gt;&quot;</span> <span class="o">+</span> <span class="n">leg_xml_data</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;duration&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span> <span class="o">+</span> <span class="s2">&quot;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&quot;</span>
+            <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">leg_xml_data</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="s2">&quot;step&quot;</span><span class="p">):</span>
+                <span class="n">output</span> <span class="o">+=</span> <span class="n">child</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;html_instructions&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span> <span class="o">+</span> <span class="s2">&quot;, Entfernung: &quot;</span> \
+                          <span class="o">+</span> <span class="n">child</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;distance&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span> \
+                          <span class="o">+</span> <span class="s2">&quot;, Dauer: &quot;</span> <span class="o">+</span> <span class="n">child</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;duration&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;&quot;</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Something went wrong :(&quot;</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">output</span><span class="p">,</span> <span class="n">xml_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">]</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, .
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

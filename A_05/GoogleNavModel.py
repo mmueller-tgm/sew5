@@ -1,4 +1,4 @@
-#!/bin/python3.4
+#!/bin/python3.5
 # -*- coding: utf-8 -*-
 """
 Autor: Maximilian Müller
@@ -43,7 +43,7 @@ class GoogleNavModel:
         self.dest = dest.split(" ")
         self.dest = "+".join(self.dest)
 
-    def get_directions(self) -> str:
+    def get_directions(self):
         """
         Returns the formatted text, describing the path to take.
         :rtype: (str, str)

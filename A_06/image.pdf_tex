@@ -1,0 +1,124 @@
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'image.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1095.74568435bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.52851746)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{image.pdf}}%
+    \put(0.4177206,0.44858206){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{Socket}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{image.pdf}}%
+    \put(0.35109492,0.42475972){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+print_line(msg:str)}}}%
+    \put(0.35109492,0.41246434){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{image.pdf}}%
+    \put(0.60645488,0.2746637){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{SocketDecorator}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{image.pdf}}%
+    \put(0.525044,0.25698911){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+component: SocketDecorator}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{image.pdf}}%
+    \put(0.525044,0.24161987){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+print_line(msg:str)}}}%
+    \put(0.525044,0.22932449){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{image.pdf}}%
+    \put(0.38123401,0.2000614){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{ConcreteBASE64Decorator}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{image.pdf}}%
+    \put(0.28742016,0.18238681){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+component: SocketDecorator}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{image.pdf}}%
+    \put(0.28742016,0.16701757){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{print_line(msg:str)}}}%
+    \put(0.28742016,0.15472219){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{image.pdf}}%
+    \put(0.8847457,0.19425186){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{ConcreteBASE16Decorator}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{image.pdf}}%
+    \put(0.79093186,0.17657721){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+component: SocketDecorator}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{image.pdf}}%
+    \put(0.79093186,0.16120796){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{print_line(msg:str)}}}%
+    \put(0.79093186,0.14891258){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{image.pdf}}%
+    \put(0.40816093,0.05071851){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{ConcreteBASE32Decorator}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{image.pdf}}%
+    \put(0.31436245,0.03304391){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+component: SocketDecorator}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{image.pdf}}%
+    \put(0.31436245,0.01767467){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{print_line(msg:str)}}}%
+    \put(0.31436245,0.00537923){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{image.pdf}}%
+    \put(0.77928198,0.12593559){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{ConcreteAESDecorator}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{image.pdf}}%
+    \put(0.69785574,0.10826094){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+component: SocketDecorator}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{image.pdf}}%
+    \put(0.69785574,0.09289169){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{print_line(msg:str)}}}%
+    \put(0.69785574,0.08059631){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{image.pdf}}%
+    \put(0.60691594,0.05374628){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{ConcreteOutputDecorator}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{image.pdf}}%
+    \put(0.51548431,0.03607163){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+component: SocketDecorator}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{image.pdf}}%
+    \put(0.51548431,0.02070239){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{print_line(msg:str)}}}%
+    \put(0.51548431,0.00840701){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{image.pdf}}%
+    \put(0.07292705,0.27922838){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{TestSocket}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{image.pdf}}%
+    \put(0.00630139,0.25540607){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+print_line(msg:str)}}}%
+    \put(0.00630139,0.24311069){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{image.pdf}}%
+    \put(0.0726504,0.51314824){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{ServerSocket}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{image.pdf}}%
+    \put(0.00307385,0.49547362){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+ip: string = localhost}}}%
+    \put(0.00307385,0.48317821){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+port: int = 5005}}}%
+    \put(0.00307385,0.47088283){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+buffer: int = 1024}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{image.pdf}}%
+    \put(0.00307385,0.45551359){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+print_line(msg:str)}}}%
+    \put(0.00307385,0.44321818){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{image.pdf}}%
+    \put(0.07407974,0.3981863){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{ClientSocket}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{image.pdf}}%
+    \put(0.00448782,0.38051168){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+ip: string = localhost}}}%
+    \put(0.00448782,0.3682163){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+port: int = 5005}}}%
+    \put(0.00448782,0.35592092){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+buffer: int = 1024}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{image.pdf}}%
+    \put(0.00448782,0.34055167){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+print_line(msg:str)}}}%
+    \put(0.00448782,0.32825629){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+read_line(msg:str='')}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{image.pdf}}%
+  \end{picture}%
+\endgroup%

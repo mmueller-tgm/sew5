@@ -1,0 +1,15 @@
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+pip install Nose Pylint
+apt-get update
+apt-get upgrade
+apt-get install git python-mock python-nose python-coverage pylint
+ssh-keygen
+verschieben von /root/.ssh/id_rsa* zu /var/jenkins-home/.ssh/
+owner und ownergroup ändern zu jenkins:jenkins
+
+git branch jenkins-test
+git checkout jenkins-test
+git rm (alles was nicht bruchtest ist)
+git commit -am "jenkins-test"
+git push 

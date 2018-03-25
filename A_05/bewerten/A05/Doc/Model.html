@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Model &#8212; A05  documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="A05  documentation" href="index.html" />
+    <link rel="prev" title="Controller" href="Controller.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-Model">
+<span id="model"></span><h1>Model<a class="headerlink" href="#module-Model" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Model.Model">
+<em class="property">class </em><code class="descclassname">Model.</code><code class="descname">Model</code><a class="reference internal" href="_modules/Model.html#Model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Model.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>The controller handels the requests to the api and parsing of the response</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><strong>format</strong> &#8211; the typ of format for the response</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="Model.Model.__dict__">
+<code class="descname">__dict__</code><em class="property"> = mappingproxy({'__module__': 'Model', '__dict__': &lt;attribute '__dict__' of 'Model' objects&gt;, 'requestXml': &lt;function Model.requestXml at 0x000000000842BD08&gt;, '__doc__': '\n        The controller handels the requests to the api and parsing of the response\n\n        :var format: the typ of format for the response\n    ', '__init__': &lt;function Model.__init__ at 0x000000000840F488&gt;, 'requestJson': &lt;function Model.requestJson at 0x000000000840FD08&gt;, 'setformat': &lt;function Model.setformat at 0x000000000842C6A8&gt;, '__weakref__': &lt;attribute '__weakref__' of 'Model' objects&gt;})</em><a class="headerlink" href="#Model.Model.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Model.Model.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Model.html#Model.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Model.Model.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>The init sets the standard format, which is json</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Model.Model.__module__">
+<code class="descname">__module__</code><em class="property"> = 'Model'</em><a class="headerlink" href="#Model.Model.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Model.Model.__weakref__">
+<code class="descname">__weakref__</code><a class="headerlink" href="#Model.Model.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Model.Model.requestJson">
+<code class="descname">requestJson</code><span class="sig-paren">(</span><em>origin</em>, <em>destination</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Model.html#Model.requestJson"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Model.Model.requestJson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the google navigation api and prases the json to a easily readable String, if a error happens the method
+will return a error message</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>origin</strong> &#8211; origin of the route</li>
+<li><strong>destination</strong> &#8211; destination of the route</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">String which will be displayed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Model.Model.requestXml">
+<code class="descname">requestXml</code><span class="sig-paren">(</span><em>origin</em>, <em>destination</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Model.html#Model.requestXml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Model.Model.requestXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the google navigation api and prases the xml to a easily readable String, if a error happens the method
+will return a error message</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>origin</strong> &#8211; origin of the route</li>
+<li><strong>destination</strong> &#8211; destination of the route</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">String which will be displayed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Model.Model.setformat">
+<code class="descname">setformat</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Model.html#Model.setformat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Model.Model.setformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the format to the given parameter
+:param value: value which can be json or xml
+:return: None</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt>
+<em class="property">class </em><code class="descclassname">Model.</code><code class="descname">Model</code><a class="reference internal" href="_modules/Model.html#Model"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The controller handels the requests to the api and parsing of the response</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><strong>format</strong> &#8211; the typ of format for the response</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt>
+<code class="descname">__dict__</code><em class="property"> = mappingproxy({'__module__': 'Model', '__dict__': &lt;attribute '__dict__' of 'Model' objects&gt;, 'requestXml': &lt;function Model.requestXml at 0x000000000842BD08&gt;, '__doc__': '\n        The controller handels the requests to the api and parsing of the response\n\n        :var format: the typ of format for the response\n    ', '__init__': &lt;function Model.__init__ at 0x000000000840F488&gt;, 'requestJson': &lt;function Model.requestJson at 0x000000000840FD08&gt;, 'setformat': &lt;function Model.setformat at 0x000000000842C6A8&gt;, '__weakref__': &lt;attribute '__weakref__' of 'Model' objects&gt;})</em></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Model.html#Model.__init__"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>The init sets the standard format, which is json</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">__module__</code><em class="property"> = 'Model'</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">__weakref__</code></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">requestJson</code><span class="sig-paren">(</span><em>origin</em>, <em>destination</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Model.html#Model.requestJson"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Calls the google navigation api and prases the json to a easily readable String, if a error happens the method
+will return a error message</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>origin</strong> &#8211; origin of the route</li>
+<li><strong>destination</strong> &#8211; destination of the route</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">String which will be displayed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">requestXml</code><span class="sig-paren">(</span><em>origin</em>, <em>destination</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Model.html#Model.requestXml"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Calls the google navigation api and prases the xml to a easily readable String, if a error happens the method
+will return a error message</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>origin</strong> &#8211; origin of the route</li>
+<li><strong>destination</strong> &#8211; destination of the route</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">String which will be displayed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">setformat</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Model.html#Model.setformat"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Sets the format to the given parameter
+:param value: value which can be json or xml
+:return: None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Controller.html" title="previous chapter">Controller</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Model.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Marvin Ertl.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/Model.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
