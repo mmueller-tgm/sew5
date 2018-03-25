@@ -54,3 +54,5 @@ fabric.properties
 RemoteSystemsTempFiles/
 virtenv/
 wget-log
+
+*/virtenv/
